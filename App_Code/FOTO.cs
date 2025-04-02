@@ -19,5 +19,11 @@ public class FOTO
         
     }
 
-
+    //mostra foto
+    public DataTable ShowPhoto()
+    {
+        DB db = new DB();
+        db.query = "IMG100";
+        return db.SQLselect();
+    }
 }

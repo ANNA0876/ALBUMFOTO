@@ -17,7 +17,7 @@ public class DB
     {
         conn.ConnectionString = "Data source = LAPTOP-H9198PPP\\SQLEXPRESS; Initial Catalog =FOTOALBUM; Integrated Security=true;";
         cmd.Connection = conn;
-        cmd.CommandType = CommandType.StoredProcedure;
+        cmd.CommandType = CommandType.Text;
     }
     public DataTable SQLselect()
     {
