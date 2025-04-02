@@ -13,14 +13,11 @@
 </head>
 <body>
     <form id="form1" runat="server">
+        <%--BARRADINAVIGAZIONE--%>
         <div>
-            <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
-            </asp:ContentPlaceHolder>
-
-            <%--BARRADINAVIGAZIONE--%>
-            <nav class="navbar bg-body-tertiary fixed-top">
+            <nav class="navbar bg-body-tertiary">
                 <div class="container-fluid">
-                    <a class="navbar-brand" href="#"> <i class="bi bi-camera"></i> FOTO ALBUM</a>
+                    <a class="navbar-brand" href="#"><i class="bi bi-camera"></i>FOTO ALBUM</a>
                     <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
                         <span class="navbar-toggler-icon"></span>
                     </button>
@@ -61,17 +58,20 @@
                     </div>
                 </div>
             </nav>
-           
-             &nbsp;
+        </div>
+        <div>
+            <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+            </asp:ContentPlaceHolder>
+            &nbsp;
             <footer>
                 <div class="text-center py-3 mt-4 mb-4 border-top ">
-                <div class="footer-links">
-                     <i class="bi bi-camera"></i>
-                    <a href="#">About</a> | 
+                    <div class="footer-links">
+                        <i class="bi bi-camera"></i>
+                        <a href="#">About</a> | 
                     <a href="#">Help</a> | 
                     <a href="#">Terms</a>
-                </div>
-                <p>&copy; 2025 FOTO ALBUM, Inc.</p>
+                    </div>
+                    <p>&copy; 2025 FOTO ALBUM, Inc.</p>
                 </div>
             </footer>
         </div>

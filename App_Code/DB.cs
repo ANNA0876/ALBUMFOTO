@@ -15,9 +15,9 @@ public class DB
     public string query; //creo un campo così mi prenderà la query che mi serve 
     public DB()
     {
-        conn.ConnectionString = "Data source = LAPTOP-H9198PPP\\SQLEXPRESS; Initial Catalog =FOTOALBUM; Integrated Security=true;";
+        conn.ConnectionString = "Data source = DESKTOP-0E2GJI9\\SQLEXPRESS; Initial Catalog =FOTOALBUM; Integrated Security=true;";
         cmd.Connection = conn;
-        cmd.CommandType = CommandType.StoredProcedure;
+        cmd.CommandType = CommandType.Text;
     }
     public DataTable SQLselect()
     {

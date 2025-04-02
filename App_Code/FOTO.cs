@@ -19,5 +19,11 @@ public class FOTO
         
     }
 
+    public DataTable SelectAll()
+    {
+        DB db = new DB();
+        db.query = "FOTO_SelectAll";
+        return db.SQLselect();
+    }
 
 }
